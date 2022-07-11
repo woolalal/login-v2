@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1530">
+<defs>
+<style>.cls-1{fill:url('#cls-1');}.cls-2{fill:url('#cls-2');}.blinking1{-webkit-animation:blinking1 5s linear infinite;animation:blinking1 5s linear infinite;}.blinking2{-webkit-animation:blinking2 5s linear infinite;animation:blinking2 5s linear infinite;}.blinking3{-webkit-animation:blinking3 5s linear infinite;animation:blinking3 5s linear infinite;}.blinking4{-webkit-animation:blinking4 5s linear infinite;animation:blinking4 5s linear infinite;}.blinking5{-webkit-animation:blinking5 5s linear infinite;animation:blinking5 5s linear infinite;}@-webkit-keyframes blinking1{0%{opacity:0;}20%{opacity:0;}50%{opacity:1;}80%{opacity:0;}100%{opacity:0;}}@-webkit-keyframes blinking2{0%{opacity:0;}40%{opacity:0;}70%{opacity:1;}100%{opacity:0;}}@-webkit-keyframes blinking3{0%{opacity:0.6667;}20%{opacity:0;}60%{opacity:0;}90%{opacity:1;}100%{opacity:0.6667;}}@-webkit-keyframes blinking4{0%{opacity:0.6667;}10%{opacity:1;}40%{opacity:0;}80%{opacity:0;}100%{opacity:0.6667;}}@-webkit-keyframes blinking5{0%{opacity:0;}30%{opacity:1;}60%{opacity:0;}100%{opacity:0;}}@keyframes blinking1{0%{opacity:0;}20%{opacity:0;}50%{opacity:1;}80%{opacity:0;}100%{opacity:0;}}@keyframes blinking2{0%{opacity:0;}40%{opacity:0;}70%{opacity:1;}100%{opacity:0;}}@keyframes blinking3{0%{opacity:0.6667;}20%{opacity:0;}60%{opacity:0;}90%{opacity:1;}100%{opacity:0.6667;}}@keyframes blinking4{0%{opacity:0.6667;}10%{opacity:1;}40%{opacity:0;}80%{opacity:0;}100%{opacity:0.6667;}}@keyframes blinking5{0%{opacity:0;}30%{opacity:1;}60%{opacity:0;}100%{opacity:0;}}</style>
+<radialGradient id="cls-1"><stop offset="25%" stop-color="#ffffff"/><stop offset="95%" stop-color="rgba(255,255,255,0.1)"/></radialGradient>
+<radialGradient id="cls-2"><stop offset="0%" stop-color="#ffffff"/><stop offset="70%" stop-color="rgba(255,255,255,0.1)"/></radialGradient>
+</defs>
+<title>Stars</title>
+<circle class="cls-2 blinking1" cx="430.44" cy="484.38" r="3.93"/>
+<circle class="cls-2 blinking2" cx="1455.71" cy="329.74" r="3.93"/>
+<circle class="cls-2 blinking2" cx="962.9" cy="308.13" r="3.93"/>
+<circle class="cls-2 blinking3" cx="196.41" cy="811.2" r="3.93"/>
+<circle class="cls-2 blinking3" cx="204.21" cy="364.83" r="3.93"/>
+<circle class="cls-2 blinking3" cx="1679.71" cy="348.38" r="3.93"/>
+<circle class="cls-2 blinking3" cx="1403.34" cy="958.17" r="3.93"/>
+<circle class="cls-2 blinking4" cx="833.85" cy="1019.87" r="3.93"/>
+<circle class="cls-2 blinking4" cx="1398.88" cy="660.96" r="3.93"/>
+<circle class="cls-2 blinking5" cx="155.18" cy="1000.97" r="3.93"/>
+<circle class="cls-2 blinking5" cx="1706.46" cy="564.44" r="3.93"/>
+<circle class="cls-1 blinking4" cx="1764.43" cy="1079.37" r="4.28"/>
+<circle class="cls-1 blinking1" cx="323.83" cy="448.96" r="8.91"/>
+<circle class="cls-1 blinking1" cx="1601.7" cy="323.15" r="8.91"/>
+<circle class="cls-1 blinking1" cx="78.28" cy="1056.87" r="8.91"/>
+<circle class="cls-1 blinking2" cx="1712.03" cy="393.34" r="8.91"/>
+<circle class="cls-1 blinking2" cx="711.28" cy="1006.68" r="8.91"/>
+<circle class="cls-1 blinking5" cx="287.8" cy="738.82" r="8.91"/>
+<circle class="cls-1 blinking5" cx="801.62" cy="285.42" r="9.23"/>
+</svg>

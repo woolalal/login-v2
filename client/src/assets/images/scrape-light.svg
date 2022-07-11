@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 5442.52 1984.25">
+  <defs>
+    <style>.cls-1{fill:#fdd8bf}.cls-2{fill:#010101;opacity:.16;mix-blend-mode:soft-light}.cls-3{fill:url('#radial-1')}</style>
+    <radialGradient id="radial-1"><stop offset="25%" stop-color="#ffffff"/><stop offset="95%" stop-color="rgba(255,255,255,0.1)"/></radialGradient>
+  </defs>
+  <title>Scrape Light</title>
+  <rect class="cls-1" width="5442.52" height="1984.25"/>
+  <path class="cls-2" d="M5442.52,954c-440.84,473.38-944.79,16.7-1421-15.53,15.25,56.5-.34,140.38-24.39,172.44s-52.67,27.12-79.56,21c-823.57-187.41-1644.95-715.66-2467.7-465.14-209.36,63.74-427,175.87-626,5.3-171.62-147.14-823.87,99.93-823.87,281.93v1029.86c327.59,.39,831.18-380.59,1144.56-474.27,397.59-118.86,824.64-269.35,1239.44-302.59,878.34-70.46,2181.06,689.94,3058.52,777.29z"/>
+  <circle class="cls-3" cx="3108.89" cy="71.19" r="11.26"><animate attributeName="opacity" values="0;1;0" keyframes=".1;.5;.9" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="943.55" cy="1899.45" r="11.26"><animate attributeName="opacity" values=".5;1;0;0;.5" keyframes="0;.2;.6;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="4685.8" cy="1881.99" r="11.26"><animate attributeName="opacity" values=".5;0;0;1;.5" keyframes="0;.2;.4;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="212.12" cy="792.75" r="11.26"><animate attributeName="opacity" values="0;1;0" keyframes=".1;.5;.9" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="348.78" cy="1252.4" r="11.26"><animate attributeName="opacity" values=".5;1;0;0;.5" keyframes="0;.2;.6;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="1640.32" cy="1248.51" r="11.26"><animate attributeName="opacity" values=".5;0;0;1;.5" keyframes="0;.2;.4;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="2931.85" cy="925.63" r="11.26"><animate attributeName="opacity" values="0;1;0" keyframes=".1;.5;.9" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="1079.02" cy="1478.98" r="5.37"><animate attributeName="opacity" values=".5;1;0;0;.5" keyframes="0;.2;.6;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="5175.94" cy="150.6" r="7.5"><animate attributeName="opacity" values=".5;0;0;1;.5" keyframes="0;.2;.4;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="5219.36" cy="599.25" r="7.5"><animate attributeName="opacity" values="0;1;0" keyframes=".1;.5;.9" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="4712.81" cy="975.55" r="7.5"><animate attributeName="opacity" values=".5;1;0;0;.5" keyframes="0;.2;.6;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="1824.05" cy="1612.05" r="7.5"><animate attributeName="opacity" values=".5;0;0;1;.5" keyframes="0;.2;.4;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="5284.48" cy="1265" r="7.5"><animate attributeName="opacity" values="0;1;0" keyframes=".1;.5;.9" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="4662.15" cy="208.5" r="7.5"><animate attributeName="opacity" values=".5;1;0;0;.5" keyframes="0;.2;.6;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="3822.73" cy="280.85" r="7.5"><animate attributeName="opacity" values=".5;0;0;1;.5" keyframes="0;.2;.4;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="2143.89" cy="208.5" r="7.5"><animate attributeName="opacity" values="0;1;0" keyframes=".1;.5;.9" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="2368.22" cy="1395.26" r="7.5"><animate attributeName="opacity" values=".5;1;0;0;.5" keyframes="0;.2;.6;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="2645.8" cy="1072.61" r="7.5"><animate attributeName="opacity" values=".5;0;0;1;.5" keyframes="0;.2;.4;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="2037.99" cy="1065.37" r="7.5"><animate attributeName="opacity" values="0;1;0" keyframes=".1;.5;.9" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="836.71" cy="1195.63" r="7.5"><animate attributeName="opacity" values=".5;1;0;0;.5" keyframes="0;.2;.6;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="1075.51" cy="1130.5" r="7.5"><animate attributeName="opacity" values=".5;0;0;1;.5" keyframes="0;.2;.4;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="208.85" cy="1521.62" r="7.5"><animate attributeName="opacity" values="0;1;0" keyframes=".1;.5;.9" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="515.7" cy="476.23" r="7.5"><animate attributeName="opacity" values=".5;1;0;0;.5" keyframes="0;.2;.6;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="1480.54" cy="327.09" r="17.64"><animate attributeName="opacity" values=".5;0;0;1;.5" keyframes="0;.2;.4;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="5300.46" cy="287.02" r="11.25"><animate attributeName="opacity" values="0;1;0" keyframes=".1;.5;.9" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="4987.79" cy="874.24" r="7.5"><animate attributeName="opacity" values=".5;1;0;0;.5" keyframes="0;.2;.6;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="3699.71" cy="584.78" r="7.5"><animate attributeName="opacity" values=".5;0;0;1;.5" keyframes="0;.2;.4;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="2226.09" cy="920.64" r="7.5"><animate attributeName="opacity" values="0;1;0" keyframes=".1;.5;.9" dur="3s" repeatCount="indefinite"/></circle>
+  <circle class="cls-3" cx="175.59" cy="440.05" r="7.5"><animate attributeName="opacity" values=".5;1;0;0;.5" keyframes="0;.2;.6;.8;1" dur="3s" repeatCount="indefinite"/></circle>
+</svg>
