@@ -13,7 +13,7 @@ const Profile = () => {
                     Tests
                 </Tab>
                 <Tab eventKey="contact" title="Contact">
-                    Testsss
+                    Testing
                 </Tab>
                 </Tabs>
             </Container>
