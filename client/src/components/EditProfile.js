@@ -5,8 +5,9 @@ import Axios from 'axios';
 import SingleLineTextBox from './SingleLineTextBox'
 import { useSelector, useDispatch } from 'react-redux';
 import { setUser } from '../redux/userSlice';
-import { Button } from 'react-bootstrap';
+import { Button, Alert } from 'react-bootstrap';
 import { CancelIcon, CheckIcon } from '../icons/FontAwesomeIcons';
+import * as yup from "yup";
 
 const ButtonsWrap = styled.div`
     margin-top: 2rem;
@@ -20,9 +21,19 @@ const EditProfile = () => {
         userDetails: state?.user?.value?.userDetails
     }))
     const dispatch = useDispatch();
-    const [editInformation, setEditInformation] = useState(false)
+    const [editInformation, setEditInformation] = useState(false);
+    const [success, setSuccess] = useState(false);
+    const [error, setError] = useState(false);
 
-    console.log('userdet', userDetails)
+    let validate = yup.object().shape({
+        firstName: yup.string()
+                    .required('Required'),
+        lastName: yup.string()
+                    .required('Required'),
+        email: yup.string()
+                    .email('Not a valid email')
+                    .required('Email is required')
+    })
 
     return (
         <Formik
@@ -32,6 +43,7 @@ const EditProfile = () => {
                 lastName: userDetails?.lname,
                 email: userDetails?.email,
             }}
+            validationSchema={validate}
             onSubmit = { async (values) => {
                 console.log('values', values)
                 const response = await Axios.put('http://localhost:3001/api/updateprofile', {
@@ -44,22 +56,12 @@ const EditProfile = () => {
                 if(response?.data?.user) {
                     localStorage.setItem('token', response.data.user)
                     setEditInformation(!editInformation);
-                    // dispatch(setUser({
-                    // userDetails: {
-                    //     id: userDetails?.userid,
-                    //     name: values.firstName,
-                    //     lname: values.lastName,
-                    //     email: values.email
-                    // },
-                    //     isLoggedIn: true
-                    // }))
                 }
                 else console.log('error')
             }}
         >
         {formik => (
             <div>
-                {/* {console.log('formik1', formik)} */}
                 <Form onSubmit={formik.handleSubmit}>
                     <SingleLineTextBox 
                         type="text"
@@ -69,6 +71,7 @@ const EditProfile = () => {
                         onBlur={formik.handleBlur}
                         readOnly={!editInformation ? true : false}
                         value={formik.values.firstName}
+                        errors={(formik.errors.firstName && formik.touched.firstName && formik.errors.firstName) || ""}
                     />
                     <SingleLineTextBox 
                         type="text"
@@ -78,6 +81,7 @@ const EditProfile = () => {
                         onBlur={formik.handleBlur}
                         readOnly={!editInformation ? true : false}
                         value={formik.values.lastName}
+                        errors={(formik.errors.lastName && formik.touched.lastName && formik.errors.lastName) || ""}
                     />
                     <SingleLineTextBox 
                         type="text"
@@ -87,7 +91,11 @@ const EditProfile = () => {
                         onBlur={formik.handleBlur}
                         readOnly={!editInformation ? true : false}
                         value={formik.values.email}
+                        errors={(formik.errors.email && formik.touched.email && formik.errors.email) || ""}
                     />
+                    {error ? (
+                    <Alert key='danger' variant='danger'>Error updating information. Please try again</Alert>
+                    ) : null}
                     <ButtonsWrap>
                         {!editInformation 
                             ? <Button variant="outline-dark" className="mt-3" onClick={() => setEditInformation(!editInformation)}>Edit Information</Button>

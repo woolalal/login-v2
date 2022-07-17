@@ -65,7 +65,6 @@ app.put("/api/updateprofile", async (req, res) => {
     const newLastName = req.body.lastName
     const newEmail = req.body.email
 
-    console.log('id', id)
     UserModel.findByIdAndUpdate({_id: id}, {
         firstName: newFirstName,
         lastName: newLastName,
