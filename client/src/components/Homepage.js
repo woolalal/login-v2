@@ -21,21 +21,19 @@ const Homepage = () => {
                 navigate('/login')
             }
             else {
-                console.log('user', user)
                 dispatch(setUser({
                     userDetails: {
+                        userid: user.userid,
                         name: user.name,
+                        lname: user.lname,
                         email: user.email
                     },
                     isLoggedIn: true
                 }))
             }
-        }
+        } else navigate('/login')
     }, [])
-    
-    useEffect(() => {
-        console.log('user1', userDetails)
-    }, [])
+
     return (
         <div>
             Welcome, {userDetails?.name}!

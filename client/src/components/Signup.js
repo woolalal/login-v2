@@ -82,7 +82,6 @@ const Signup = () => {
                 <div>
                     <h2 style={{textAlign: 'center', paddingTop: '3rem'}}>Create a new account.</h2>
                     <p style={{textAlign: 'center'}}>Think of an awesome username. Start your adventure today!</p>
-                    {console.log('formik', formik)}
                     {error && <Alert className="my-3" key="danger" variant="danger">{error}</Alert>} 
                     <Form onSubmit={formik.handleSubmit}>
                         <SingleLineTextBox 

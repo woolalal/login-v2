@@ -2,7 +2,7 @@ import React from 'react'
 import {Navbar, Container, NavbarBrand, Nav, NavDropdown} from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { setUser } from '../redux/userSlice';
+import { setUser, reset } from '../redux/userSlice';
 
 const NavigationBar = () => {
     const navigate = useNavigate();
@@ -13,17 +13,19 @@ const NavigationBar = () => {
         userDetails: state?.user?.value?.userDetails
     }))
     const handleLogout = () => {
-        dispatch(setUser({
-            userDetails: {
-                name: "",
-                email: ""
-            },
-            isLoggedIn: false
-        }))
+        // dispatch(setUser({
+        //     userDetails: {
+        //         name: "",
+        //         email: ""
+        //     },
+        //     isLoggedIn: false
+        // }))
+        dispatch(reset())
         localStorage.removeItem('token')
         navigate('/')
     }
-
+    console.log('user', userDetails)
+    console.log('islogged', isLoggedIn);
     const handleLogoClick = () => {
         if(isLoggedIn){
             navigate('/home')

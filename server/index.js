@@ -29,7 +29,9 @@ app.post("/api/register", async (req, res) => {
         if (err) res.json({ status: 'error', error: err})
         else {
             const token = jwt.sign({
+                userid: user._id,
                 name: req.body.firstName,
+                lname: req.body.lastName,
                 email: req.body.email
             }, 'secret123')
             res.status(200).json({status: 'ok', token: token})
@@ -46,13 +48,40 @@ app.post("/api/login", async (req, res) => {
     const verifyPassword = await bcrypt.compare(req.body.password, user.password);
     if(verifyPassword) {
         const token = jwt.sign({
+            userid: user._id,
             name: user.firstName,
+            lname: user.lastName,
             email: user.email
         }, 'secret123')
 
         return res.json({ status: 'ok', user: token })
     }
     else return res.json({ status: 'error, user does not exist', user: false })
+})
+
+app.put("/api/updateprofile", async (req, res) => {
+    const id = req.body.id;
+    const newFirstName = req.body.firstName
+    const newLastName = req.body.lastName
+    const newEmail = req.body.email
+
+    console.log('id', id)
+    UserModel.findByIdAndUpdate({_id: id}, {
+        firstName: newFirstName,
+        lastName: newLastName,
+        email: newEmail
+    }, {new: true}, (err, data) => {
+        if (err) return res.status(404).json({ status: 'error, update not successful, try again!'})
+        else {
+            const token = jwt.sign({
+                userid: data._id,
+                name: data.firstName,
+                lname: data.lastName,
+                email: data.email
+            }, 'secret123')
+            return res.json({ status: 'ok', user: token })
+        }
+    })
 })
 
 app.listen(3001, () => {
