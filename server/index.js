@@ -83,6 +83,37 @@ app.put("/api/updateprofile", async (req, res) => {
     })
 })
 
+app.put("/api/changepassword", async (req, res) => {
+    const id = req.body.id;
+    const oldPassword = req.body.oldPassword;
+    const newPassword = req.body.newPassword;
+
+    const user = await UserModel.findOne({
+        email: req.body.email,
+    })
+
+    const verifyPassword = await bcrypt.compare(oldPassword, user.password);
+    if(!verifyPassword){
+        return res.status(404).json({ status: 'Error, the old password keyed is wrong!' })
+    } else {
+        const hashedPassword = await bcrypt.hash(newPassword, 10);
+        UserModel.findByIdAndUpdate({_id: id}, {
+            password: hashedPassword
+        }, {new: true}, (err, data) => {
+            if (err) return res.status(404).json({ status: 'Error, update not successful, try again!'})
+            else {
+                const token = jwt.sign({
+                    userid: data._id,
+                    name: data.firstName,
+                    lname: data.lastName,
+                    email: data.email
+                }, 'secret123')
+                return res.json({ status: 'ok', user: token })
+            }
+        })
+    }
+})
+
 app.listen(3001, () => {
     console.log('server running');
 })

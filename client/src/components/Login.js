@@ -39,12 +39,12 @@ const Login = () => {
                 }}
                 validationSchema={validate}
                 onSubmit={async (values, {resetForm} )=> {
-                    console.log('values', values)
+                    console.log('value', values)
                     const response = await Axios.post('http://localhost:3001/api/login', {
                         email: values.email,
                         password: values.password
                     });
-
+                    console.log('res', response)
                     if(response.data.user) {
                         localStorage.setItem('token', response.data.user)
                         // navigate('/home');

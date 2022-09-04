@@ -24,8 +24,8 @@ const NavigationBar = () => {
         localStorage.removeItem('token')
         navigate('/')
     }
-    console.log('user', userDetails)
-    console.log('islogged', isLoggedIn);
+    // console.log('user', userDetails)
+    // console.log('islogged', isLoggedIn);
     const handleLogoClick = () => {
         if(isLoggedIn){
             navigate('/home')
