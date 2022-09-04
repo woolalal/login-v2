@@ -45,7 +45,7 @@ const EditProfile = () => {
             }}
             validationSchema={validate}
             onSubmit = { async (values) => {
-                console.log('values', values)
+                // console.log('values', values)
                 const response = await Axios.put('http://localhost:3001/api/updateprofile', {
                     id: userDetails?.userid,
                     firstName: values?.firstName,
